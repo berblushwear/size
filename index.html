@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#713b4e">
+<meta name="description" content="Katalog 74 SKU Berryblush. Cari kode produk, bandingkan ukuran dalam cm, dan lihat panduan ukuran serta detail bahan.">
+<title>Berryblush — Katalog SKU & Ukuran</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23713b4e'/%3E%3Ctext x='18' y='47' font-size='50' font-family='Georgia' fill='%23fff7f3'%3Eb%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#catalog">Langsung ke katalog</a>
+<header><a class="brand" href="./" aria-label="Berryblush beranda">berryblush<span>wear, your way.</span></a><a class="header-link" href="#guide">Panduan ukuran <span aria-hidden="true">↗</span></a></header>
+<main>
+<section class="intro" aria-labelledby="title"><div><p class="eyebrow">THE SIZE & MATERIAL EDIT</p><h1 id="title">Kode simpel.<br>Ukuran yang <em>pas.</em></h1><p class="intro-copy">Temukan ukuran dan bahan untuk setiap SKU.<br>Semua detail penting, dalam satu katalog.</p></div><div class="catalog-stamp"><span class="stamp-line">BERRYBLUSH / CATALOG</span><strong>74<span>SKU</span></strong><span class="stamp-line">UKURAN · BAHAN · PANDUAN</span></div></section>
+<section class="guide" id="guide" aria-label="Panduan membaca ukuran"><span class="guide-label">SEBELUM MEMILIH</span><p>Semua ukuran dalam <b>cm</b>. <b>LD</b> = lingkar dada, <b>PB</b> = panjang baju. Tanda <b>≈</b> berarti perkiraan. Bandingkan dengan baju yang biasa dipakai.</p><span class="guide-icon" aria-hidden="true">↔</span></section>
+<section id="catalog" aria-label="Katalog SKU">
+<div class="toolbar"><div class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><label class="sr-only" for="search">Cari kode SKU</label><input id="search" type="search" placeholder="Cari kode SKU, mis. A01 atau 7019" autocomplete="off"><kbd>/</kbd></div><label class="size-select"><span>Ukuran</span><select id="size"><option value="all">Semua ukuran</option><option value="one">Satu ukuran</option><option value="multi">S–XL / multi ukuran</option><option value="set">Inner + outer</option></select></label></div>
+<div class="filter-row"><div class="filters" role="group" aria-label="Filter bahan"><button class="filter active" data-material="all" aria-pressed="true">Semua bahan <span id="all-count">74</span></button><button class="filter" data-material="Soft Knit" aria-pressed="false">Soft Knit <span id="knit-count"></span></button><button class="filter" data-material="Rayon Spandex" aria-pressed="false">Rayon Spandex <span id="rayon-count"></span></button></div><span id="result-count" role="status" aria-live="polite">Memuat katalog…</span></div>
+<div id="grid" class="grid" aria-busy="true"></div><div id="empty" class="empty" hidden><span aria-hidden="true">⌕</span><h2>SKU belum ditemukan.</h2><p>Coba kode lain atau tampilkan semua bahan dan ukuran.</p><button id="reset" class="primary">Reset pencarian</button></div><noscript><p>Aktifkan JavaScript untuk mencari katalog. Semua data dapat diakses dalam <a href="catalog.json">file katalog</a>.</p></noscript>
+</section>
+<section class="endnote"><span aria-hidden="true">✳</span><p>Pas di ukuran.<br><em>Nyaman jadi diri sendiri.</em></p><a href="#title">Kembali ke atas ↑</a></section>
+</main>
+<footer><span class="brand footer-brand">berryblush</span><p>Katalog SKU · Ukuran & bahan</p><span>74 panduan ukuran</span></footer>
+<dialog id="chart-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><div><p class="eyebrow">PANDUAN UKURAN</p><h2 id="dialog-title"></h2></div><button id="close-dialog" class="icon-button" aria-label="Tutup panduan ukuran">×</button></div><div class="dialog-body"><img id="chart-image" alt=""><div class="dialog-info"><span id="dialog-material" class="material"></span><p id="dialog-description"></p><div id="measurements"></div><ul id="dialog-notes"></ul><p class="small-note">Semua ukuran dalam cm. ≈ menunjukkan ukuran perkiraan pada referensi.</p><a id="download" class="primary" download>Unduh foto ukuran <span aria-hidden="true">↓</span></a></div></div></dialog>
+</body></html>
